@@ -17,7 +17,7 @@ public class FrogSimulation
 	{ 
 		int count=0;
 		for(int i=1;i<=maxHops;i++){
-			count += sim.hopDistance();
+			count += hopDistance();
 		}
 		if(count>=goalDistance){
 			return true;
@@ -29,7 +29,7 @@ public class FrogSimulation
 	{ 
 		double time=0;
 		for(int i=0; i<=num; i++){
-			if(sim.simulate()==true){
+			if(simulate()){
 				time++;
 			}
 		}
